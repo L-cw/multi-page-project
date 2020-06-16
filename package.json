@@ -1,0 +1,41 @@
+{
+  "name": "bubi.cn-fe",
+  "version": "4.0.0",
+  "description": "",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --inline --config webpack.dev.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "bootstrap": "^4.1.2",
+    "bootstrap-loader": "^3.0.0",
+    "css-loader": "^0.28.11",
+    "expose-loader": "^0.7.5",
+    "node-sass": "^4.9.2",
+    "postcss-loader": "^2.1.6",
+    "resolve-url-loader": "^2.3.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.11",
+    "ejs-render-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "glob": "^7.1.6",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "url-loader": "^1.0.1",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}

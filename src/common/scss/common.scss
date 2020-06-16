@@ -1,0 +1,119 @@
+@import "../../iconfont/iconfont.css";
+@import "./variables.scss";
+/* 重置浏览器样式 */
+* {
+  margin: 0;
+  padding: 0;
+  text-size-adjust: none; // 解决移动端字体爆炸的问题
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: #444;
+  text-decoration: none;
+}
+div:focus {
+  outline: none;
+}
+img {
+  border: none;
+  display: block;
+}
+input,
+select,
+textarea {
+  outline: 0;
+  resize: none;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+p {
+  word-wrap: break-word;
+  max-height: 100%;
+}
+div,
+ul,
+li,
+p {
+  line-height: 1.5;
+}
+
+/* 公共样式 */
+.content {
+  /* 版心 */
+  position: relative;
+  width: 1180px;
+  margin: 0 auto;
+}
+.pointer {
+  cursor: pointer;
+}
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+a {
+  transition: all 0.5s;
+}
+
+// 返回顶部
+.back-to-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  box-shadow: 0 1px 10px #dddada;
+  background: url(../../images/common/to-top.png) #fff no-repeat;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  height: $header-h;
+  line-height: $header-h;
+}
+.page-cont {
+  min-height: calc(100vh - #{$header-h} - #{$header-h});
+}
+
+.footer {
+  width: 100%;
+  height: $footer-h;
+  background-color: #0b182e;
+  .copyright {
+    height: 100%;
+    line-height: $footer-h;
+    text-align: center;
+    color: #fff;
+  }
+}
