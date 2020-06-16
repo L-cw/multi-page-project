@@ -1,4 +1,4 @@
-# bubi.cn-fe
+# offical website
 采用 jq 开发的官网
 
 ## Project setup
